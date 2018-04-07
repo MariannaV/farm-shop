@@ -1,0 +1,9 @@
+@import "helpers/_postcss-reset.scss";
+@import "fonts/fonts.scss";
+@import "helpers/_variables.scss";
+@import "helpers/_base.scss";
+
+body {
+  font-family: "Museo Sans", sans-serif;
+}
+

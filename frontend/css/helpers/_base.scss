@@ -1,0 +1,21 @@
+.mobile-hide {
+  display: none;
+}
+
+@media (min-width: $tablet) {
+  .tablet-on {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop) {
+  .desktop-on {
+    display: block;
+  }
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
