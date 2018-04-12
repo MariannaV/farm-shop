@@ -1,4 +1,5 @@
 include ../components/head/head
+include ../components/banner/index
 
 doctype html
 html(lang="ru")
@@ -10,4 +11,80 @@ html(lang="ru")
 })
 
 body.main-page
-	p У тебя всё получится ❤
+	+banner-block()
+	slider-items.cashbox-slider
+		slider-items-description
+			h6 Выберите свою кассу
+			a
+			block-with-slider
+				img(src="../img/back.svg", alt="")
+				img
+		slider-items-container
+			slide-item
+				img.slide-item-img(src="../img/evotor-7.2.png", alt="")
+				h2.slide-item-title Эвотор 7.2
+				p.slide-item-description Проверенная, функциональная, доступная
+				div.slide-item-price.only-price 18 490
+				input.slide-item-checkbox(type="checkbox" id="evotor")
+				label.slide-item-lebel(for="evotor") 
+		block-slider
+			div.active 
+			div 
+			div
+	optional-equipment-block
+		h2.title-of-equpment-block Для удобства
+		equipment-container
+			p.select Выберите дополнительное оборудование
+			optional-equipment
+				input(type="checkbox" id="equipment")
+				label(for="equipment")
+				optional-equipment-img
+					img(src="../img/weight.png", alt="")
+				h6.item Весы
+				p ШТРИХ-Слим 300М 15-2,5 Д1Н
+				counter 3
+				optional-equipment-price.only-price 8500
+				delete-optional-eqipment 
+			optional-equipment.driver 
+				input(type="checkbox" id="equipment")
+				label(for="equipment")
+				optional-equipment-img
+					img(src="../img/weight.png", alt="")
+				h6.item Драйвер
+				p Драйвер для весов серии ШТРИХ-Слим
+				counter 3
+				optional-equipment-price.only-price 1000
+				delete-optional-eqipment
+			optional-equipment.alone
+				input(type="checkbox" id="equipment")
+				label(for="equipment")
+				optional-equipment-img
+					img(src="../img/weight.png", alt="")
+				h6.item Переходник
+				p Для весов CAS
+				counter 3
+				optional-equipment-price.only-price 8500
+				delete-optional-eqipment 
+		select-system-block
+			p.select Выберите систему товароучета
+			systems-block
+				input(type="radio" id="system")
+				label(for="system")
+				system-block-description.items-block
+					img(src="../img/1C.png", alt="")
+					h6 1С:Розница				
+				system-price.prices
+					div 700
+					span / месяц
+		select-service-block
+			p.select Выберите услугу:
+			services-block.items-block
+				img(src="", alt="")
+				p.service-title Подключение к ОФД
+				service-price.only-price 3000
+				button.select-service  Выбрать услугу
+	total-cost-block
+		h6.total-cost Стоимость решения под ваш бизнес:
+		total-solution-price 27 790
+		a.solution-link(href="#") Показать выписку
+		button.solution-button Заказать комплект

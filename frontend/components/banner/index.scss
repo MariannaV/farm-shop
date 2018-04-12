@@ -1,0 +1,219 @@
+banner-block {
+  display: block;
+  padding-left: 19px;
+  padding-top: 36px;
+  padding-right: 27px;
+  padding-bottom: 56px;
+  background-image: url("../img/farm-shop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media ($min-tablet) {
+    background-image: url("../img/banner-1-1600.jpg");
+  }
+
+  @media ($min-desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding-top: 128px;
+    padding-bottom: 154px;
+  }
+}
+
+banner-description {
+  display: block;
+
+  @media ($min-desktop) {
+    max-width: 51%;
+    margin-right: 40px;
+    padding-top: 15px;
+  }
+
+  h1 {
+    line-height: 59px;
+    font-size: 56px;
+    color: #ffffff;
+    overflow-wrap: break-word;
+    hyphens: auto;
+
+    @media ($min-desktop) {
+      line-height: 84px;
+      font-size: 80px;
+    }
+  }
+
+  p {
+    line-height: 25px;
+    font-size: 16px;
+    color: #ffffff;
+  }
+
+  h1 + p {
+    margin-top: 24px;
+
+    @media ($min-desktop) {
+      margin-top: 34px;
+      margin-left: 5px;
+    }
+  }
+}
+
+banner-description-tags {
+  display: none;
+
+  @media ($min-desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 38px;
+    margin-left: 5px;
+  }
+}
+
+banner-description-tag {
+  display: block;
+  line-height: 21px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  color: #ffffff;
+  opacity: 0.5;
+  margin-right: 10px;
+}
+
+banner-solution {
+  display: block;
+  width: 280px;
+  background-color: white;
+  border-radius: 20px;
+  padding-left: 29px;
+  padding-right: 29px;
+  padding-top: 31px;
+  padding-bottom: 19px;
+
+  @media ($max-desktop) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media ($min-desktop) {
+    margin-left: auto;
+    width: 445px;
+    margin-right: 27px;
+    padding-top: 61px;
+    padding-left: 77px;
+    padding-bottom: 40px;
+  }
+
+  .solution-title {
+    line-height: 28px;
+    font-size: 20px;
+    color: #2d2e33;
+    font-weight: 500;
+
+    @media ($min-desktop) {
+      font-size: 24px;
+    }
+
+    & + banner-solution-price {
+      @media ($min-desktop) {
+        margin-top: 15px;
+      }
+    }
+  }
+
+  &-price {
+    display: block;
+    line-height: 79px;
+    font-size: 56px;
+    font-weight: 100;
+    color: #333333;
+
+    @media ($min-desktop) {
+      font-size: 80px;
+    }
+
+    &::after {
+      content: "";
+      background-image: url("../img/rub.svg");
+      min-width: 13px;
+      min-height: 18px;
+      display: inline-block;
+      background-repeat: no-repeat;
+      margin-left: 4px;
+
+      @media ($min-desktop) {
+        width: 16px;
+        height: 28px;
+        margin-left: -8px;
+        margin-bottom: -6px;
+      }
+    }
+  }
+}
+
+.solution-description {
+  line-height: 21px;
+  font-size: 14px;
+  color: #b8c0d1;
+
+  @media ($max-desktop) {
+    display: none;
+  }
+}
+
+.solution-link {
+  display: block;
+  line-height: 1.2;
+  font-size: 14px;
+  color: #2a7dd1;
+  text-decoration: dotted;
+}
+
+.solution-button {
+  min-width: 232px;
+  border-radius: 50px;
+  background-color: #ff7800;
+  border: 1px solid #ff7800;
+  padding-left: 11px;
+  padding-right: 9px;
+  padding-top: 12px;
+  padding-bottom: 13px;
+  line-height: 32px;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+  margin-left: -5px;
+
+  @media ($min-desktop) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+banner-description + banner-solution {
+  @media ($max-desktop) {
+    margin-top: 49px;
+  }
+}
+
+banner-solution-price + .solution-description {
+  @media ($min-desktop) {
+    margin-top: 21px;
+  }
+}
+
+.solution-description + .solution-link {
+  @media ($min-desktop) {
+    margin-top: 6px;
+  }
+}
+
+.solution-link + .solution-button {
+  margin-top: 20px;
+
+  @media ($min-desktop) {
+    margin-top: 37px;
+  }
+}
