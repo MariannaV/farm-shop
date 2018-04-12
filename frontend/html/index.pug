@@ -1,5 +1,6 @@
 include ../components/head/head
 include ../components/banner/index
+include ../components/slider/index
 
 doctype html
 html(lang="ru")
@@ -7,30 +8,13 @@ html(lang="ru")
 		+head({
 			"title": "Главная",
 			"description": "Главная страница",
-			"style_page": "styles/index.css"
-})
+			"style_page": "styles/index.css"})
+		link(href="js/owl.carousel/owl.carousel.css" rel="stylesheet")
+		link( href="js/owl.carousel/owl.theme.default.css" rel="stylesheet")
 
 body.main-page
 	+banner-block()
-	slider-items.cashbox-slider
-		slider-items-description
-			h6 Выберите свою кассу
-			a
-			block-with-slider
-				img(src="../img/back.svg", alt="")
-				img
-		slider-items-container
-			slide-item
-				img.slide-item-img(src="../img/evotor-7.2.png", alt="")
-				h2.slide-item-title Эвотор 7.2
-				p.slide-item-description Проверенная, функциональная, доступная
-				div.slide-item-price.only-price 18 490
-				input.slide-item-checkbox(type="checkbox" id="evotor")
-				label.slide-item-lebel(for="evotor") 
-		block-slider
-			div.active 
-			div 
-			div
+	+slider()
 	optional-equipment-block
 		h2.title-of-equpment-block Для удобства
 		equipment-container
@@ -88,3 +72,7 @@ body.main-page
 		total-solution-price 27 790
 		a.solution-link(href="#") Показать выписку
 		button.solution-button Заказать комплект
+
+script(src="js/jquery/jquery.min.js" defer)
+script(src="js/owl.carousel/owl.carousel.js" defer)
+script(src="js/slider/index.js" defer)

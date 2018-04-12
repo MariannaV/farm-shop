@@ -16,6 +16,8 @@
 		<link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5"/>
 		<meta name="theme-color" content="#ffffff"/>
 		<link rel="stylesheet" href="styles/index.css"/>
+		<link href="js/owl.carousel/owl.carousel.css" rel="stylesheet">
+		<link href="js/owl.carousel/owl.theme.default.css" rel="stylesheet">
 	</head>
 </html>
 <body class="main-page">
@@ -37,23 +39,58 @@
 	</banner-block>
 	<slider-items class="cashbox-slider">
 		<slider-items-description>
-			<h6>Выберите свою кассу</h6><a></a>
-			<block-with-slider><img src="../img/back.svg" alt=""><img></block-with-slider>
+			<h6>Выберите свою кассу</h6><a>     </a>
 		</slider-items-description>
-		<slider-items-container>
-			<slide-item><img class="slide-item-img" src="../img/evotor-7.2.png" alt="">
-				<h2 class="slide-item-title">Эвотор 7.2</h2>
-				<p class="slide-item-description">Проверенная, функциональная, доступная</p>
-				<div class="slide-item-price only-price">18 490</div>
-				<input class="slide-item-checkbox" type="checkbox" id="evotor">
-				<label class="slide-item-lebel" for="evotor"> </label>
-			</slide-item>
-		</slider-items-container>
-		<block-slider>
-			<div class="active"> </div>
-			<div> </div>
-			<div></div>
-		</block-slider>
+		<div class="slider-items-container">     
+			<div class="slide-item">
+				<input class="slide-item-checkbox" type="checkbox" id="evotor1"/>
+				<div class="slide-item-block"><img class="slide-item-img" src="../img/evotor-7.2.png" alt=""/>
+					<div class="slide-item-text">
+						<div class="slide-item-buttons">
+							<button class="slide-item-minus">-</button>
+							<div class="slide-item-amount">1</div>
+							<button class="slide-item-plus">+          </button>
+						</div>
+						<h2 class="slide-item-title">Эвотор 7.2</h2>
+						<p class="slide-item-description">Проверенная, функциональная, доступная</p>
+						<div class="slide-item-price only-price">18 490          </div>
+						<label class="slide-item-label" for="evotor1"></label>
+					</div>
+				</div>
+			</div>
+			<div class="slide-item">
+				<input class="slide-item-checkbox" type="checkbox" id="evotor2"/>
+				<div class="slide-item-block"><img class="slide-item-img" src="../img/evotor-7.2.png" alt=""/>
+					<div class="slide-item-text">
+						<div class="slide-item-buttons">
+							<button class="slide-item-minus">-</button>
+							<div class="slide-item-amount">1</div>
+							<button class="slide-item-plus">+          </button>
+						</div>
+						<h2 class="slide-item-title">Эвотор 7.2</h2>
+						<p class="slide-item-description">Проверенная, функциональная, доступная</p>
+						<div class="slide-item-price only-price">18 490          </div>
+						<label class="slide-item-label" for="evotor2"></label>
+					</div>
+				</div>
+			</div>
+			<div class="slide-item">
+				<input class="slide-item-checkbox" type="checkbox" id="evotor3"/>
+				<div class="slide-item-block"><img class="slide-item-img" src="../img/evotor-7.2.png" alt=""/>
+					<div class="slide-item-text">
+						<div class="slide-item-buttons">
+							<button class="slide-item-minus">-</button>
+							<input class="slide-item-amount" type="number" min="1" value="1"/>
+							<button class="slide-item-plus">+          </button>
+						</div>
+						<h2 class="slide-item-title">Эвотор 7.3</h2>
+						<p class="slide-item-description">Проверенная, функциональная, доступная</p>
+						<div class="slide-item-price only-price">18 490          </div>
+						<label class="slide-item-label" for="evotor3"></label>
+					</div>
+				</div>
+			</div>
+		</div>
 	</slider-items>
 	<optional-equipment-block>
 		<h2 class="title-of-equpment-block">Для удобства</h2>
@@ -118,3 +155,6 @@
 		<button class="solution-button">Заказать комплект</button>
 	</total-cost-block>
 </body>
+<script src="js/jquery/jquery.min.js" defer></script>
+<script src="js/owl.carousel/owl.carousel.js" defer></script>
+<script src="js/slider/index.js" defer></script>
