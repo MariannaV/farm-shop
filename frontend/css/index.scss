@@ -22,7 +22,8 @@ a {
 
 .main-page {
   & > banner-block,
-  & > .cashbox-slider {
+  & > .cashbox-slider,
+  & > .for-buyers-container {
     @media ($min-desktop) {
       padding-left: calc((100vw - $desktop) / 2);
       padding-right: calc((100vw - $desktop) / 2);
