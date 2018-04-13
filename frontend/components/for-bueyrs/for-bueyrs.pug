@@ -1,0 +1,45 @@
+mixin for-bueyrs()
+  .for-buyers-container
+    h2.for-buyers-title Для удобства
+    section.for-buyers-section
+      h3.for-buyers-section-title <span number='1' all='3'>/</span> Выберите дополнительное оборудование
+      .for-buyers-items
+        article.for-buyer-item
+          input(type="checkbox" id="equipment-1").for-buyer-item-checkbox
+          label(for="equipment-1").for-buyer-item-label
+          img(src="../img/weight.png", alt="").for-buyer-item-img
+          .for-buyer-item-title
+            h6 Весы
+            p ШТРИХ-Слим 300М 15-2,5 Д1Н
+          .for-buyer-item-amount
+            button.for-buyer-item-amount-minus -
+            .for-buyer-item-amount-value 1
+            button.for-buyer-item-amount-plus +
+          .for-buyer-item-price 8500 <span />
+          .for-buyer-item-close
+        article.for-buyer-item.no-margin-top
+          input(type="checkbox" id="equipment-2").for-buyer-item-checkbox
+          label(for="equipment-2").for-buyer-item-label
+          img(src="../img/weight.png", alt="").for-buyer-item-img
+          .for-buyer-item-title
+            h6 Весы
+            p ШТРИХ-Слим 300М 15-2,5 Д1Н
+          .for-buyer-item-amount
+            button.for-buyer-item-amount-minus -
+            .for-buyer-item-amount-value 1
+            button.for-buyer-item-amount-plus +
+          .for-buyer-item-price 8500 <span />
+          .for-buyer-item-close
+        article.for-buyer-item
+          input(type="radio" id="equipment").for-buyer-item-radio
+          label(for="equipment").for-buyer-item-label
+          img(src="../img/weight.png", alt="").for-buyer-item-img
+          .for-buyer-item-title
+            h6 Весы
+            p ШТРИХ-Слим 300М 15-2,5 Д1Н
+          .for-buyer-item-amount
+            button.for-buyer-item-amount-minus -
+            .for-buyer-item-amount-value 1
+            button.for-buyer-item-amount-plus +
+          .for-buyer-item-price 8500 <span>/месяц</span>
+          .for-buyer-item-close

@@ -1,0 +1,115 @@
+.for-buyers-container {
+}
+
+.for-buyers-title {
+  font-weight: 500;
+  line-height: 51px;
+  font-size: 36px;
+  text-align: center;
+  color: #22253d;
+  // margin-bottom: 42px;
+  // margin-top: 49px;
+}
+
+.for-buyers-section {
+}
+
+.for-buyers-section-title {
+  line-height: 34px;
+  font-size: 24px;
+  color: #21243c;
+  // margin-bottom: 40px;
+
+  & > span {
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: attr(number);
+      display: block;
+    }
+
+    &::after {
+      content: attr(all);
+      display: inline-block;
+    }
+  }
+}
+
+.for-buyers-items {
+}
+
+.for-buyer-item {
+  border: 1px solid #d8dce6;
+  border-radius: 5px 5px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 26px;
+
+  & + &:not(.no-margin-top) {
+    margin-top: 42px;
+  }
+
+  &.no-margin-top {
+    border-radius: 0 0 5px 5px;
+  }
+}
+
+.for-buyer-item-label {
+  display: inline-block;
+  background-repeat: no-repeat;
+}
+
+.for-buyer-item-checkbox {
+  display: none;
+
+  & + .for-buyer-item-label {
+    background-image: url("../img/checkbox-not-active.svg");
+    min-width: 36px;
+    min-height: 36px;
+  }
+}
+
+.for-buyer-item-radio {
+  display: none;
+
+  & + .for-buyer-item-label {
+  }
+}
+
+.for-buyer-item-title {
+  & > h6 {
+    display: inline-block;
+    line-height: 34px;
+    font-size: 24px;
+    color: #21243c;
+  }
+
+  & > p {
+  }
+}
+
+.for-buyer-item-amount {
+  &-minus,
+  &-plus {
+  }
+
+  &-minus {
+  }
+
+  &-plus {
+  }
+
+  &-value {
+  }
+}
+
+.for-buyer-item-price {
+  & > span {
+  }
+}
+
+.for-buyer-item-close {
+}

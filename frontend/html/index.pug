@@ -1,6 +1,7 @@
 include ../components/head/head
-include ../components/banner/index
-include ../components/slider/index
+include ../components/banner/banner
+include ../components/slider/slider
+include ../components/for-bueyrs/for-bueyrs
 
 doctype html
 html(lang="ru")
@@ -15,17 +16,13 @@ html(lang="ru")
 body.main-page
 	+banner-block()
 	+slider()
-	optional-equipment-block
-		h2.title-of-equpment-block Для удобства
+	+for-bueyrs()
+	
+	section.for-buyers-section
+	section.for-buyers-section
 		equipment-container
-			p.select Выберите дополнительное оборудование
+			p.select 
 			optional-equipment
-				input(type="checkbox" id="equipment")
-				label(for="equipment")
-				optional-equipment-img
-					img(src="../img/weight.png", alt="")
-				h6.item Весы
-				p ШТРИХ-Слим 300М 15-2,5 Д1Н
 				counter 3
 				optional-equipment-price.only-price 8500
 				delete-optional-eqipment 

@@ -53,7 +53,7 @@
 						</div>
 						<h2 class="slide-item-title">Эвотор 7.2</h2>
 						<p class="slide-item-description">Проверенная, функциональная, доступная</p>
-						<div class="slide-item-price only-price">18 490          </div>
+						<div class="slide-item-price only-price">18 490</div>
 						<label class="slide-item-label" for="evotor1"></label>
 					</div>
 				</div>
@@ -69,7 +69,7 @@
 						</div>
 						<h2 class="slide-item-title">Эвотор 7.2</h2>
 						<p class="slide-item-description">Проверенная, функциональная, доступная</p>
-						<div class="slide-item-price only-price">18 490          </div>
+						<div class="slide-item-price only-price">18 490</div>
 						<label class="slide-item-label" for="evotor2"></label>
 					</div>
 				</div>
@@ -85,23 +85,71 @@
 						</div>
 						<h2 class="slide-item-title">Эвотор 7.3</h2>
 						<p class="slide-item-description">Проверенная, функциональная, доступная</p>
-						<div class="slide-item-price only-price">18 490          </div>
+						<div class="slide-item-price only-price">18 490</div>
 						<label class="slide-item-label" for="evotor3"></label>
 					</div>
 				</div>
 			</div>
 		</div>
 	</slider-items>
-	<optional-equipment-block>
-		<h2 class="title-of-equpment-block">Для удобства</h2>
+	<div class="for-buyers-container">
+		<h2 class="for-buyers-title">Для удобства</h2>
+		<section class="for-buyers-section">
+			<h3 class="for-buyers-section-title"><span number='1' all='3'>/</span> Выберите дополнительное оборудование</h3>
+			<div class="for-buyers-items">
+				<article class="for-buyer-item">
+					<input class="for-buyer-item-checkbox" type="checkbox" id="equipment-1"/>
+					<label class="for-buyer-item-label" for="equipment-1"></label><img class="for-buyer-item-img" src="../img/weight.png" alt=""/>
+					<div class="for-buyer-item-title">
+						<h6>Весы</h6>
+						<p>ШТРИХ-Слим 300М 15-2,5 Д1Н</p>
+					</div>
+					<div class="for-buyer-item-amount">
+						<button class="for-buyer-item-amount-minus">-</button>
+						<div class="for-buyer-item-amount-value">1</div>
+						<button class="for-buyer-item-amount-plus">+</button>
+					</div>
+					<div class="for-buyer-item-price">8500 <span /></div>
+					<div class="for-buyer-item-close"></div>
+				</article>
+				<article class="for-buyer-item no-margin-top">
+					<input class="for-buyer-item-checkbox" type="checkbox" id="equipment-2"/>
+					<label class="for-buyer-item-label" for="equipment-2"></label><img class="for-buyer-item-img" src="../img/weight.png" alt=""/>
+					<div class="for-buyer-item-title">
+						<h6>Весы</h6>
+						<p>ШТРИХ-Слим 300М 15-2,5 Д1Н</p>
+					</div>
+					<div class="for-buyer-item-amount">
+						<button class="for-buyer-item-amount-minus">-</button>
+						<div class="for-buyer-item-amount-value">1</div>
+						<button class="for-buyer-item-amount-plus">+</button>
+					</div>
+					<div class="for-buyer-item-price">8500 <span /></div>
+					<div class="for-buyer-item-close"></div>
+				</article>
+				<article class="for-buyer-item">
+					<input class="for-buyer-item-radio" type="radio" id="equipment"/>
+					<label class="for-buyer-item-label" for="equipment"></label><img class="for-buyer-item-img" src="../img/weight.png" alt=""/>
+					<div class="for-buyer-item-title">
+						<h6>Весы</h6>
+						<p>ШТРИХ-Слим 300М 15-2,5 Д1Н</p>
+					</div>
+					<div class="for-buyer-item-amount">
+						<button class="for-buyer-item-amount-minus">-</button>
+						<div class="for-buyer-item-amount-value">1</div>
+						<button class="for-buyer-item-amount-plus">+</button>
+					</div>
+					<div class="for-buyer-item-price">8500 <span>/месяц</span></div>
+					<div class="for-buyer-item-close"></div>
+				</article>
+			</div>
+		</section>
+	</div>
+	<section class="for-buyers-section"></section>
+	<section class="for-buyers-section">
 		<equipment-container>
-			<p class="select">Выберите дополнительное оборудование</p>
+			<p class="select"> </p>
 			<optional-equipment>
-				<input type="checkbox" id="equipment">
-				<label for="equipment"></label>
-				<optional-equipment-img><img src="../img/weight.png" alt=""></optional-equipment-img>
-				<h6 class="item">Весы</h6>
-				<p>ШТРИХ-Слим 300М 15-2,5 Д1Н</p>
 				<counter>3</counter>
 				<optional-equipment-price class="only-price">8500</optional-equipment-price>
 				<delete-optional-eqipment> </delete-optional-eqipment>
@@ -148,7 +196,7 @@
 				<button class="select-service"> Выбрать услугу</button>
 			</services-block>
 		</select-service-block>
-	</optional-equipment-block>
+	</section>
 	<total-cost-block>
 		<h6 class="total-cost">Стоимость решения под ваш бизнес:</h6>
 		<total-solution-price>27 790</total-solution-price><a class="solution-link" href="#">Показать выписку</a>
