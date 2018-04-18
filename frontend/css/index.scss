@@ -5,6 +5,7 @@
 @import "../components/banner/banner.scss";
 @import "../components/slider/slider.scss";
 @import "../components/for-bueyrs/for-bueyrs.scss";
+@import "../components/popup/callback.scss";
 
 body {
   font-family: "Museo Sans", sans-serif;
@@ -245,3 +246,104 @@ total-solution-price {
   }
 }
 
+// ______________________________________
+
+popup-order-block {
+  display: block;
+  width: 612px;
+  border: 1px solid #b8c0d1;
+  border-radius: 2px;
+  // background-color: #d8dce6;
+}
+
+order-block-content {
+  display: block;
+  padding-left: 50px;
+  padding-top: 17px;
+  background-color: #e3e4e7;
+
+  h2 {
+    font-size: 24px;
+  }
+}
+
+order-block-conclusion {
+  display: flex;
+  font-size: 25px;
+  padding-top: 34px;
+  padding-left: 50px;
+  background-color: white;
+}
+
+conclusion-cost {
+  display: block;
+
+  &::after {
+    content: "";
+    background-image: url("../img/rub.svg");
+    min-width: 13px;
+    min-height: 18px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    margin-left: 7px;
+  }
+}
+
+.conclusion-button {
+  color: white;
+  border-radius: 20px;
+  width: 216px;
+  height: 40px;
+  background-color: #ff7800;
+  border: 1px solid #ff7800;
+  font-size: 18px;
+}
+
+p + conclusion-cost {
+  margin-left: 25px;
+}
+
+conclusion-cost + button {
+  margin-left: 102px;
+}
+
+table {
+  display: block;
+
+  & > tbody {
+    display: block;
+  }
+}
+
+tr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid gray;
+
+  &:not(:last-child) {
+    border-bottom: none;
+  }
+}
+
+td {
+  &.name {
+    width: 40%;
+    margin-right: 20px;
+  }
+
+  &.amount {
+    width: 100px;
+    margin-right: 10px;
+  }
+
+  &.multiply {
+    width: 10px;
+    margin-right: 10px;
+  }
+
+  &.price {
+    width: 200px;
+  }
+}

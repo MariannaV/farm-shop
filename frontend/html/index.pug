@@ -2,6 +2,7 @@ include ../components/head/head
 include ../components/banner/banner
 include ../components/slider/slider
 include ../components/for-bueyrs/for-bueyrs
+include ../components/popup/callback
 
 doctype html
 html(lang="ru")
@@ -14,10 +15,10 @@ html(lang="ru")
 		link( href="js/owl.carousel/owl.theme.default.css" rel="stylesheet")
 
 body.main-page
-	+banner-block()
-	+slider()
-	+for-bueyrs()
-	//- section.for-buyers-section
+	//- +banner-block()
+	//- +slider()
+	//- +for-bueyrs()
+	//- //- section.for-buyers-section
 	//- 	equipment-container
 	//- 		p.select 
 	//- 		optional-equipment
@@ -67,7 +68,25 @@ body.main-page
 	//- 	total-solution-price 27 790
 	//- 	a.solution-link(href="#") Показать выписку
 	//- 	button.solution-button Заказать комплект
+	+popup-callback()
+	popup-order-block
+		order-block-content
+			h2 Онлайн-касса
+			table
+				tr
+					td.name dfgdf
+					td.amount 1 шт
+					td.multiply x
+					td.price 5750 <span />	
+		order-block-conclusion 
+			p Итого:
+			conclusion-cost 61 040
+			button.conclusion-button Заказать сейчас
+
+
 
 script(src="js/jquery/jquery.min.js" defer)
 script(src="js/owl.carousel/owl.carousel.js" defer)
 script(src="js/slider/index.js" defer)
+
+

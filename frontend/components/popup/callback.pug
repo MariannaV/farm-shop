@@ -1,0 +1,21 @@
+mixin popup-callback()
+  #popup-callback.request-sent 
+    label
+    popup-callback-block
+      h3 На какой номер вам позвонить? 
+      form(onsubmit="document.querySelector('#popup-callback').classList.add('request-sent'); return false;").callback
+        input.callback-telephone(type="tel" placeholder="Телефон" required)
+        input.callback-input(type="checkbox" id="checkbox-1")
+        button.button-submit(type="submit") Отправить
+        div.callback-agreement
+          label.callback-label(for="checkbox-1") 
+          p Я согласен на обработку моих персональных данных.
+            a(href="#") Пользовательское соглашение
+    popup-message
+      h2 Благодарим за заказ!
+      p Мы перезвоним вам через 5 минут.
+      p А пока можно 
+        a(href="#") познакомиться с акциями и предложениями 
+        |или 
+        a(href="#") почитать блог
+      

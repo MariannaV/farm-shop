@@ -1,341 +1,64 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-	<title>Главная</title>
-	<meta charset="utf-8" />
-	<meta content="Главная страница" name="description" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="HandheldFriendly" content="true" />
-	<meta name="format-detection" content="telephone=no" />
-	<meta content="IE=edge" http-equiv="X-UA-Compatible" />
-	<link href="img/favicons/favicon.ico" rel="shortcut icon" />
-	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png" />
-	<link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png" />
-	<link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png" />
-	<link rel="manifest" href="img/favicons/manifest.json" />
-	<link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5" />
-	<meta name="theme-color" content="#ffffff" />
-	<link rel="stylesheet" href="styles/index.css" />
-	<link href="js/owl.carousel/owl.carousel.css" rel="stylesheet">
-	<link href="js/owl.carousel/owl.theme.default.css" rel="stylesheet">
-</head>
-
+	<head>
+		<title>Главная</title>
+		<meta charset="utf-8"/>
+		<meta content="Главная страница" name="description"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta name="HandheldFriendly" content="true"/>
+		<meta name="format-detection" content="telephone=no"/>
+		<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+		<link href="img/favicons/favicon.ico" rel="shortcut icon"/>
+		<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png"/>
+		<link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png"/>
+		<link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png"/>
+		<link rel="manifest" href="img/favicons/manifest.json"/>
+		<link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5"/>
+		<meta name="theme-color" content="#ffffff"/>
+		<link rel="stylesheet" href="styles/index.css"/>
+		<link href="js/owl.carousel/owl.carousel.css" rel="stylesheet">
+		<link href="js/owl.carousel/owl.theme.default.css" rel="stylesheet">
+	</head>
 </html>
-
 <body class="main-page">
-	<banner-block>
-		<banner-description>
-			<h1>Фермерская лавка</h1>
-			<p>У вас небольшой магазин с натуральной продукцией, которую привозят с фермерских хозяйств. Помещение стилизовано под деревенский
-				дом. Поток покупателей небольшой, но постоянный. Больших очередей не бывает. Есть постоянные покупатели, учет которых
-				хочется вести. Мы поможем организовать удобную работу — настроим кассу и учетную систему под ваш бизнес.</p>
-			<banner-description-tags>
-				<banner-description-tag>#ФЕРМЕРСКАЯ ЛАВКА</banner-description-tag>
-				<banner-description-tag>#РЫНОК</banner-description-tag>
-			</banner-description-tags>
-		</banner-description>
-		<banner-solution>
-			<h6 class="solution-title">Готовое решение:</h6>
-			<banner-solution-price>27 790 </banner-solution-price>
-			<p class="solution-description">В комплекте: касса (1), оборудование (2), приложения (1)</p>
-			<a class="solution-link" href="#">Показать выписку</a>
-			<button class="solution-button">Заказать комплект</button>
-		</banner-solution>
-	</banner-block>
-	<slider-items class="cashbox-slider">
-		<slider-items-description>
-			<h6>Выберите свою кассу</h6>
-			<a> </a>
-		</slider-items-description>
-		<div class="slider-items-container">
-			<div class="slide-item">
-				<input class="slide-item-checkbox" type="checkbox" id="evotor1" />
-				<div class="slide-item-block">
-					<img class="slide-item-img" src="img/evotor-7.2.png" alt="" />
-					<div class="slide-item-text">
-						<div class="slide-item-buttons">
-							<button class="slide-item-minus">-</button>
-							<div class="slide-item-amount">1</div>
-							<button class="slide-item-plus">+ </button>
-						</div>
-						<h2 class="slide-item-title">Эвотор 7.2</h2>
-						<p class="slide-item-description">Проверенная, функциональная, доступная</p>
-						<div class="slide-item-price only-price">18 490</div>
-						<label class="slide-item-label" for="evotor1"></label>
-					</div>
+	<div class="request-sent" id="popup-callback"> 
+		<label></label>
+		<popup-callback-block>
+			<h3>На какой номер вам позвонить? </h3>
+			<form class="callback" onsubmit="document.querySelector('#popup-callback').classList.add('request-sent'); return false;">
+				<input class="callback-telephone" type="tel" placeholder="Телефон" required="required"/>
+				<input class="callback-input" type="checkbox" id="checkbox-1"/>
+				<button class="button-submit" type="submit">Отправить</button>
+				<div class="callback-agreement">
+					<label class="callback-label" for="checkbox-1"> </label>
+					<p>Я согласен на обработку моих персональных данных.<a href="#">Пользовательское соглашение</a></p>
 				</div>
-			</div>
-			<div class="slide-item">
-				<input class="slide-item-checkbox" type="checkbox" id="evotor2" />
-				<div class="slide-item-block">
-					<img class="slide-item-img" src="img/evotor-7.2.png" alt="" />
-					<div class="slide-item-text">
-						<div class="slide-item-buttons">
-							<button class="slide-item-minus">-</button>
-							<div class="slide-item-amount">1</div>
-							<button class="slide-item-plus">+ </button>
-						</div>
-						<h2 class="slide-item-title">Эвотор 7.2</h2>
-						<p class="slide-item-description">Проверенная, функциональная, доступная</p>
-						<div class="slide-item-price only-price">18 490</div>
-						<label class="slide-item-label" for="evotor2"></label>
-					</div>
-				</div>
-			</div>
-			<div class="slide-item">
-				<input class="slide-item-checkbox" type="checkbox" id="evotor3" />
-				<div class="slide-item-block">
-					<img class="slide-item-img" src="img/evotor-7.2.png" alt="" />
-					<div class="slide-item-text">
-						<div class="slide-item-buttons">
-							<button class="slide-item-minus">-</button>
-							<input class="slide-item-amount" type="number" min="1" value="1" />
-							<button class="slide-item-plus">+ </button>
-						</div>
-						<h2 class="slide-item-title">Эвотор 7.3</h2>
-						<p class="slide-item-description">Проверенная, функциональная, доступная</p>
-						<div class="slide-item-price only-price">18 490</div>
-						<label class="slide-item-label" for="evotor3"></label>
-					</div>
-				</div>
-			</div>
-		</div>
-	</slider-items>
-	<div class="for-buyers-container">
-		<h2 class="for-buyers-title">Для удобства</h2>
-		<section class="for-buyers-section">
-			<h3 class="for-buyers-section-title">
-				<span number='1' all='3'>/</span> Выберите дополнительное оборудование</h3>
-			<div class="for-buyers-items">
-				<article class="for-buyer-item">
-					<input class="for-buyer-item-checkbox" type="checkbox" id="equipment-1" />
-					<label class="for-buyer-item-label" for="equipment-1"></label>
-					<div class="for-buyer-item-img">
-						<img src="img/weight.png" alt="" />
-					</div>
-					<div class="for-buyer-item-title">
-						<h6>Весы</h6>
-						<p>ШТРИХ-Слим 300М 15-2,5 Д1Н</p>
-					</div>
-					<div class="for-buyer-item-amount">
-						<button class="for-buyer-item-amount-minus">-</button>
-						<div class="for-buyer-item-amount-value">1</div>
-						<button class="for-buyer-item-amount-plus">+</button>
-					</div>
-					<div class="for-buyer-item-price">8500
-						<span />
-					</div>
-					<div class="for-buyer-item-close"></div>
-				</article>
-				<article class="for-buyer-item no-margin-top">
-					<input class="for-buyer-item-checkbox" type="checkbox" id="equipment-2" />
-					<label class="for-buyer-item-label" for="equipment-2"></label>
-					<div class="for-buyer-item-img">
-						<img src="img/driver-1.jpg" alt="" />
-					</div>
-					<div class="for-buyer-item-title">
-						<h6>Драйвер</h6>
-						<p>Драйвер для весов серии ШТРИХ-Слим</p>
-					</div>
-					<div class="for-buyer-item-amount">
-						<button class="for-buyer-item-amount-minus">-</button>
-						<div class="for-buyer-item-amount-value">1</div>
-						<button class="for-buyer-item-amount-plus">+</button>
-					</div>
-					<div class="for-buyer-item-price">1000
-						<span />
-					</div>
-					<div class="for-buyer-item-close"></div>
-				</article>
-				<article class="for-buyer-item">
-					<input class="for-buyer-item-checkbox" type="checkbox" id="equipment-3" />
-					<label class="for-buyer-item-label" for="equipment-3"></label>
-					<div class="for-buyer-item-img">
-						<img src="img/item-2.png" alt="" />
-					</div>
-					<div class="for-buyer-item-title">
-						<h6>Переходник</h6>
-						<p>Для весов CAS</p>
-					</div>
-					<div class="for-buyer-item-amount">
-						<button class="for-buyer-item-amount-minus">-</button>
-						<div class="for-buyer-item-amount-value">1</div>
-						<button class="for-buyer-item-amount-plus">+</button>
-					</div>
-					<div class="for-buyer-item-price">300
-						<span />
-					</div>
-					<div class="for-buyer-item-close"></div>
-				</article>
-				<article class="for-buyer-item">
-					<input class="for-buyer-item-checkbox" type="checkbox" id="equipment-4" />
-					<label class="for-buyer-item-label" for="equipment-4"></label>
-					<div class="for-buyer-item-img">
-						<img src="img/item-3.png" alt="" />
-					</div>
-					<div class="for-buyer-item-title">
-						<h6>Дисплей покупателя</h6>
-						<p>ШТРИХ-Т D2-USB-MW</p>
-					</div>
-					<div class="for-buyer-item-amount">
-						<button class="for-buyer-item-amount-minus">-</button>
-						<div class="for-buyer-item-amount-value">1</div>
-						<button class="for-buyer-item-amount-plus">+</button>
-					</div>
-					<div class="for-buyer-item-price">3300
-						<span />
-					</div>
-					<div class="for-buyer-item-close"></div>
-				</article>
-				<article class="for-buyer-item no-margin-top">
-					<input class="for-buyer-item-checkbox" type="checkbox" id="equipment-5" />
-					<label class="for-buyer-item-label" for="equipment-5"></label>
-					<div class="for-buyer-item-img">
-						<img src="img/driver-2.jpg" alt="" />
-					</div>
-					<div class="for-buyer-item-title">
-						<h6>Драйвер</h6>
-						<p>Драйвер для дисплея покупателя ШТРИХ-Т</p>
-					</div>
-					<div class="for-buyer-item-amount">
-						<button class="for-buyer-item-amount-minus">-</button>
-						<div class="for-buyer-item-amount-value">1</div>
-						<button class="for-buyer-item-amount-plus">+</button>
-					</div>
-					<div class="for-buyer-item-price">1000
-						<span />
-					</div>
-					<div class="for-buyer-item-close"></div>
-				</article>
-				<article class="for-buyer-item">
-					<input class="for-buyer-item-checkbox" type="checkbox" id="equipment-7" />
-					<label class="for-buyer-item-label" for="equipment-7"></label>
-					<div class="for-buyer-item-img">
-						<img src="img/item-4.png" alt="" />
-					</div>
-					<div class="for-buyer-item-title">
-						<h6>Денежный ящик</h6>
-						<p>АТОЛ 410</p>
-					</div>
-					<div class="for-buyer-item-amount">
-						<button class="for-buyer-item-amount-minus">-</button>
-						<div class="for-buyer-item-amount-value">1</div>
-						<button class="for-buyer-item-amount-plus">+</button>
-					</div>
-					<div class="for-buyer-item-price">3500
-						<span />
-					</div>
-					<div class="for-buyer-item-close"></div>
-				</article>
-				<article class="for-buyer-item">
-					<input class="for-buyer-item-checkbox" type="checkbox" id="equipment-8" />
-					<label class="for-buyer-item-label" for="equipment-8"></label>
-					<div class="for-buyer-item-img">
-						<img src="img/item-5.png" alt="" />
-					</div>
-					<div class="for-buyer-item-title">
-						<h6>Сканер штрихкодов</h6>
-						<p>АТОЛ SB 1101</p>
-					</div>
-					<div class="for-buyer-item-amount">
-						<button class="for-buyer-item-amount-minus">-</button>
-						<div class="for-buyer-item-amount-value">1</div>
-						<button class="for-buyer-item-amount-plus">+</button>
-					</div>
-					<div class="for-buyer-item-price">2200
-						<span />
-					</div>
-					<div class="for-buyer-item-close"></div>
-				</article>
-				<article class="for-buyer-item">
-					<input class="for-buyer-item-checkbox" type="checkbox" id="equipment-9" />
-					<label class="for-buyer-item-label" for="equipment-9"></label>
-					<div class="for-buyer-item-img">
-						<img src="img/item-6.png" alt="" />
-					</div>
-					<div class="for-buyer-item-title">
-						<h6>Принтер этикеток</h6>
-						<p>АТОЛ BP-21</p>
-					</div>
-					<div class="for-buyer-item-amount">
-						<button class="for-buyer-item-amount-minus">-</button>
-						<div class="for-buyer-item-amount-value">1</div>
-						<button class="for-buyer-item-amount-plus">+</button>
-					</div>
-					<div class="for-buyer-item-price">8500
-						<span />
-					</div>
-					<div class="for-buyer-item-close"></div>
-				</article>
-				<article class="for-buyer-item no-margin-top">
-					<input class="for-buyer-item-checkbox" type="checkbox" id="equipment-10" />
-					<label class="for-buyer-item-label" for="equipment-10"></label>
-					<div class="for-buyer-item-img">
-						<img src="img/driver-3.jpg" alt="" />
-					</div>
-					<div class="for-buyer-item-title">
-						<h6>Драйвер</h6>
-						<p>Для принтера АТОЛ BP-21</p>
-					</div>
-					<div class="for-buyer-item-amount">
-						<button class="for-buyer-item-amount-minus">-</button>
-						<div class="for-buyer-item-amount-value">1</div>
-						<button class="for-buyer-item-amount-plus">+</button>
-					</div>
-					<div class="for-buyer-item-price">1000
-						<span />
-					</div>
-					<div class="for-buyer-item-close"></div>
-				</article>
-			</div>
-		</section>
-		<section class="for-buyers-section">
-			<h3 class="for-buyers-section-title">
-				<span number='2' all='3'>/</span> Выберите систему товароучёта</h3>
-			<div class="for-buyers-items">
-				<article class="for-buyer-item">
-					<input class="for-buyer-item-radio" type="radio" id="system-1" name="system" />
-					<label class="for-buyer-item-label" for="system-1"></label>
-					<img class="for-buyer-item-img" src="img/system-1.jpg" alt="" />
-					<div class="for-buyer-item-title">
-						<h6>1C:Розница</h6>
-						<p>Полная версия программы 1С:Розница в облаке ГК ЛАД </p>
-					</div>
-					<div class="for-buyer-item-price">700
-						<span>/месяц</span>
-					</div>
-					<div class="for-buyer-item-close"></div>
-				</article>
-				<article class="for-buyer-item">
-					<input class="for-buyer-item-radio" type="radio" id="system-2" name="system" />
-					<label class="for-buyer-item-label" for="system-2"></label>
-					<img class="for-buyer-item-img" src="img/system-2.jpg" alt="" />
-					<div class="for-buyer-item-title">
-						<h6>Интеграция с текущей 1С</h6>
-						<p>Интеграция терминалов Эвотор с программами 1С</p>
-					</div>
-					<div class="for-buyer-item-price">300
-						<span>/месяц</span>
-					</div>
-					<div class="for-buyer-item-close"></div>
-				</article>
-				<article class="for-buyer-item">
-					<input class="for-buyer-item-radio" type="radio" id="system-3" name="system" />
-					<label class="for-buyer-item-label" for="system-3"></label>
-					<img class="for-buyer-item-img" src="img/system-3.jpg" alt="" />
-					<div class="for-buyer-item-title">
-						<h6>Excel + приложение обмен через Excel</h6>
-						<p>Загрузка / выгрузка номенклатуры, документов в формате Excel</p>
-					</div>
-					<div class="for-buyer-item-price">250
-						<span>/месяц</span>
-					</div>
-					<div class="for-buyer-item-close"></div>
-				</article>
-			</div>
-		</section>
+			</form>
+		</popup-callback-block>
+		<popup-message>
+			<h2>Благодарим за заказ!</h2>
+			<p>Мы перезвоним вам через 5 минут.</p>
+			<p>А пока можно <a href="#">познакомиться с акциями и предложениями </a>или <a href="#">почитать блог</a></p>
+		</popup-message>
 	</div>
+	<popup-order-block>
+		<order-block-content>
+			<h2>Онлайн-касса</h2>
+			<table>
+				<tr>
+					<td class="name">dfgdf</td>
+					<td class="amount">1 шт</td>
+					<td class="multiply">x</td>
+					<td class="price">5750 <span />	</td>
+				</tr>
+			</table>
+		</order-block-content>
+		<order-block-conclusion> 
+			<p>Итого:</p>
+			<conclusion-cost>61 040</conclusion-cost>
+			<button class="conclusion-button">Заказать сейчас</button>
+		</order-block-conclusion>
+	</popup-order-block>
 </body>
 <script src="js/jquery/jquery.min.js" defer></script>
 <script src="js/owl.carousel/owl.carousel.js" defer></script>
