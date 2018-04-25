@@ -24,7 +24,8 @@ a {
 .main-page {
   & > banner-block,
   & > .cashbox-slider,
-  & > .for-buyers-container {
+  & > .for-buyers-container,
+  & > #popup-demo {
     @media ($min-desktop) {
       padding-left: calc((100vw - $desktop) / 2);
       padding-right: calc((100vw - $desktop) / 2);
@@ -187,39 +188,16 @@ service-block {
 }
 
 // ------------------------
-.select-service {
-  min-width: 186px;
-  min-height: 60px;
-  border: 1px solid #d8dce6;
-  border-radius: 30px;
-  color: #d8dce6;
-  background-color: white;
 
-  &:hover {
-    min-width: 186px;
-    min-height: 60px;
-    border: 1px solid #17914b;
-    border-radius: 30px;
-    color: #17914b;
-    background-color: white;
-    transition: 0.5s;
-    cursor: pointer;
-  }
-}
 
-.service-title {
-  line-height: 25px;
-  font-size: 18px;
-  text-align: center;
-  font-weight: 700;
-  color: #21243c;
-}
+
 
 total-cost-block {
   display: block;
+  margin-top: 189px;
   padding-top: 15px;
-  padding-left: 18px;
-  padding-right: 23px;
+  padding-left: calc((100vw - 1162px) / 2);
+  padding-right: calc((100vw - 1162px) / 2);
 
   h6 {
     line-height: 51px;
@@ -253,17 +231,34 @@ popup-order-block {
   width: 612px;
   border: 1px solid #b8c0d1;
   border-radius: 2px;
+  position: relative;
+
+  label {
+    position: absolute;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: orange;
+    top: -24px;
+    right: -18px;
+  }
   // background-color: #d8dce6;
 }
 
 order-block-content {
   display: block;
   padding-left: 50px;
-  padding-top: 17px;
-  background-color: #e3e4e7;
+  padding-right: 20px;
+  padding-top: 56px;
+  // background-color: #e3e4e7;
 
-  h2 {
+  & > h2 {
     font-size: 24px;
+    line-height: 1.5;
+  }
+
+  & > h2 + table {
+    margin-top: 4px;
   }
 }
 
@@ -273,6 +268,7 @@ order-block-conclusion {
   padding-top: 34px;
   padding-left: 50px;
   background-color: white;
+  padding-bottom: 14px;
 }
 
 conclusion-cost {
@@ -320,7 +316,9 @@ tr {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  border: 1px solid gray;
+  // border: 1px solid gray;
+
+  padding: 10px 10px 10px 0px;
 
   &:not(:last-child) {
     border-bottom: none;
@@ -329,21 +327,107 @@ tr {
 
 td {
   &.name {
-    width: 40%;
-    margin-right: 20px;
+    display: flex;
+    width: 56.7%;
+    margin-right: auto;
+    position: relative;
+
+    & > p {
+      z-index: 1;
+      padding-right: 18px;
+      background-color: white;
+      font-weight: 300;
+      line-height: 1.5;
+      font-size: 14px;
+      color: #a0a4ad;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      border-bottom: 1px solid #d8dce6;
+      position: absolute;
+      width: 100%;
+      bottom: 4px;
+      left: 0;
+    }
   }
 
   &.amount {
-    width: 100px;
-    margin-right: 10px;
+    width: 70px;
+    line-height: 1.5;
+    font-size: 16px;
+    font-weight: 300;
+    color: #333333;
+    text-align: right;
+
+    & > span {
+      margin-left: 3px;
+      line-height: 1.5;
+      font-size: 14px;
+      font-weight: 300;
+      color: #b8c0d1;
+    }
   }
 
   &.multiply {
     width: 10px;
-    margin-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 
   &.price {
-    width: 200px;
+    display: flex;
+    align-items: center;
+    line-height: 1.6;
+    font-size: 24px;
+    font-weight: 300;
+    color: #333333;
+    width: 118px;
+    margin-top: -2px;
+
+    span {
+      background-image: url("../img/rub.svg");
+      background-size: contain;
+      min-width: 13px;
+      min-height: 13px;
+      display: inline-block;
+      background-repeat: no-repeat;
+      margin-left: 4px;
+    }
+  }
+}
+
+// // _____________________________ ВЫБЕРИТЕ УСЛУГИ
+// .for-buyers-section {
+//   & + & {
+//     margin-top: 62px;
+
+//     @media ($min-desktop) {
+//       margin-top: 123px;
+//     }
+//   }
+// }
+
+
+#popup-demo {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  & > h6 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  & > label {
+    display: inline-flex;
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 30px;
   }
 }

@@ -15,73 +15,103 @@ html(lang="ru")
 		link( href="js/owl.carousel/owl.theme.default.css" rel="stylesheet")
 
 body.main-page
-	//- +banner-block()
-	//- +slider()
-	//- +for-bueyrs()
-	//- //- section.for-buyers-section
-	//- 	equipment-container
-	//- 		p.select 
-	//- 		optional-equipment
-	//- 			counter 3
-	//- 			optional-equipment-price.only-price 8500
-	//- 			delete-optional-eqipment 
-	//- 		optional-equipment.driver 
-	//- 			input(type="checkbox" id="equipment")
-	//- 			label(for="equipment")
-	//- 			optional-equipment-img
-	//- 				img(src="../img/weight.png", alt="")
-	//- 			h6.item Драйвер
-	//- 			p Драйвер для весов серии ШТРИХ-Слим
-	//- 			counter 3
-	//- 			optional-equipment-price.only-price 1000
-	//- 			delete-optional-eqipment
-	//- 		optional-equipment.alone
-	//- 			input(type="checkbox" id="equipment")
-	//- 			label(for="equipment")
-	//- 			optional-equipment-img
-	//- 				img(src="../img/weight.png", alt="")
-	//- 			h6.item Переходник
-	//- 			p Для весов CAS
-	//- 			counter 3
-	//- 			optional-equipment-price.only-price 8500
-	//- 			delete-optional-eqipment 
-	//- 	select-system-block
-	//- 		p.select Выберите систему товароучета
-	//- 		systems-block
-	//- 			input(type="radio" id="system")
-	//- 			label(for="system")
-	//- 			system-block-description.items-block
-	//- 				img(src="../img/1C.png", alt="")
-	//- 				h6 1С:Розница				
-	//- 			system-price.prices
-	//- 				div 700
-	//- 				span / месяц
-	//- 	select-service-block
-	//- 		p.select Выберите услугу:
-	//- 		services-block.items-block
-	//- 			img(src="", alt="")
-	//- 			p.service-title Подключение к ОФД
-	//- 			service-price.only-price 3000
-	//- 			button.select-service  Выбрать услугу
-	//- total-cost-block
-	//- 	h6.total-cost Стоимость решения под ваш бизнес:
-	//- 	total-solution-price 27 790
-	//- 	a.solution-link(href="#") Показать выписку
-	//- 	button.solution-button Заказать комплект
+	+banner-block()
+	+slider()
+	+for-bueyrs()
+	//- section.for-buyers-section
+		equipment-container
+			p.select 
+			optional-equipment
+				counter 3
+				optional-equipment-price.only-price 8500
+				delete-optional-eqipment 
+			optional-equipment.driver 
+				input(type="checkbox" id="equipment")
+				label(for="equipment")
+				optional-equipment-img
+					img(src="../img/weight.png", alt="")
+				h6.item Драйвер
+				p Драйвер для весов серии ШТРИХ-Слим
+				counter 3
+				optional-equipment-price.only-price 1000
+				delete-optional-eqipment
+			optional-equipment.alone
+				input(type="checkbox" id="equipment")
+				label(for="equipment")
+				optional-equipment-img
+					img(src="../img/weight.png", alt="")
+				h6.item Переходник
+				p Для весов CAS
+				counter 3
+				optional-equipment-price.only-price 8500
+				delete-optional-eqipment 
+		select-system-block
+			p.select Выберите систему товароучета
+			systems-block
+				input(type="radio" id="system")
+				label(for="system")
+				system-block-description.items-block
+					img(src="../img/1C.png", alt="")
+					h6 1С:Розница				
+				system-price.prices
+					div 700
+					span / месяц
+	
+	total-cost-block
+		h6.total-cost Стоимость решения под ваш бизнес:
+		total-solution-price 27 790
+		a.solution-link(href="#") Показать выписку
+		button.solution-button Заказать комплект
+	#popup-demo
+		h6 Всплывающие окна:
+		label(for="popup-callback-checkbox").solution-button Заказать звонок
 	+popup-callback()
 	popup-order-block
+		label
 		order-block-content
 			h2 Онлайн-касса
 			table
 				tr
-					td.name dfgdf
-					td.amount 1 шт
-					td.multiply x
-					td.price 5750 <span />	
+					td.name: p Эвотор 7.3
+					td.amount 1 <span>шт</span>
+					td.multiply
+					td.price 23 490 <span />
+			h2 Оборудование
+			table
+				tr
+					td.name: p Сканер штрихкодов
+					td.amount 1 <span>шт</span>
+					td.multiply
+					td.price 5750 <span />
+				tr
+					td.name: p УТМ-модуль для ЕГАИС
+					td.amount 2 <span>шт</span>
+					td.multiply х
+					td.price 13 000 <span />
+				tr
+					td.name: p Дисплей покупателя
+					td.amount 1 <span>шт</span>
+					td.multiply 
+					td.price 4 800 <span />
+			h2 Приложения
+			table
+				tr
+					td.name: p Драйвер для дисплея покупателя
+					td.amount 1 <span>шт</span>
+					td.multiply
+					td.price 1000 <span />
+				tr
+					td.name: p Встроенная система  Эвотор
+					td.amount 1 <span>шт</span>
+					td.multiply 
+					td.price 0 <span />
+			h2 Услуги
+
 		order-block-conclusion 
 			p Итого:
 			conclusion-cost 61 040
 			button.conclusion-button Заказать сейчас
+
 
 
 

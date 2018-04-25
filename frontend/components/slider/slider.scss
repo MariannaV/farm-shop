@@ -80,6 +80,7 @@ slider-items-description {
 
   &-img {
     display: block;
+    max-height: 148px;
     margin: 0 auto;
   }
 
@@ -288,3 +289,69 @@ slider-items-description + .slider-items-container {
     margin-bottom: 25px;
   }
 }
+
+.slide-item {
+  position: relative;
+}
+
+.slide-item-additional-information {
+  position: absolute;
+  right: 24px;
+  top: 24px;
+}
+
+.slide-item-additional-information-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border: 1px solid;
+  color: #d8dce6;
+  border-radius: 50%;
+  transition: color 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    color: #ff7800;
+  }
+}
+
+.slide-item-additional-information-text {
+  position: absolute;
+  right: calc(24px + 8px);
+  top: calc(24px + 2px);
+  border-radius: 5px;
+  width: 297px;
+  padding: 17px 26px 25px 26px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #d8dce6;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 0;
+    left: -15px;
+    top: -15px;
+    width: calc(100% + 30px);
+    height: calc(100% + 30px);
+    background-color: rgba(60, 63, 82, 0.8);
+    filter: blur(15px);
+  }
+
+  & > * {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.slide-item-additional-information-icon:not(:hover) + .slide-item-additional-information-text {
+  opacity: 0;
+  pointer-events: none;
+} 

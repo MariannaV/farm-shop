@@ -1,6 +1,7 @@
-mixin popup-callback()
-  #popup-callback.request-sent 
-    label
+mixin popup-callback()  
+  input(type="checkbox" id="popup-callback-checkbox")
+  #popup-callback.request-sent
+    label(for="popup-callback-checkbox")
     popup-callback-block
       h3 На какой номер вам позвонить? 
       form(onsubmit="document.querySelector('#popup-callback').classList.add('request-sent'); return false;").callback
@@ -13,8 +14,8 @@ mixin popup-callback()
             a(href="#") Пользовательское соглашение
     popup-message
       h2 Благодарим за заказ!
-      p Мы перезвоним вам через 5 минут.
-      p А пока можно 
+      p.wait-callback Мы перезвоним вам через 5 минут.
+      p.offers А пока можно 
         a(href="#") познакомиться с акциями и предложениями 
         |или 
         a(href="#") почитать блог
