@@ -3,7 +3,7 @@ $mobile: 320px;
 $tablet: 768px;
 $desktop: 1162px;
 $big-desktop: 1440px;
-$max-tablet: (max-width: $tablet);
+$max-tablet: (max-width: 767px);
 $min-tablet: (min-width: $tablet);
 $max-desktop: (max-width: 1161px);
 $min-desktop: (min-width: $desktop);

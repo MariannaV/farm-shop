@@ -25,6 +25,7 @@ a {
   & > banner-block,
   & > .cashbox-slider,
   & > .for-buyers-container,
+  & > total-cost-block,
   & > #popup-demo {
     @media ($min-desktop) {
       padding-left: calc((100vw - $desktop) / 2);
@@ -194,10 +195,23 @@ service-block {
 
 total-cost-block {
   display: block;
-  margin-top: 189px;
   padding-top: 15px;
-  padding-left: calc((100vw - 1162px) / 2);
-  padding-right: calc((100vw - 1162px) / 2);
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 68px;
+
+  @media ($min-desktop) {
+    margin-top: 135px;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: #e5e8ef;
+      margin-bottom: 53px;
+    }
+  }
 
   h6 {
     line-height: 51px;
@@ -227,11 +241,18 @@ total-solution-price {
 // ______________________________________
 
 popup-order-block {
-  display: block;
+  display: flex;
+  flex-direction: column;
   width: 612px;
+  max-height: calc(100vh - 2*24px);
   border: 1px solid #b8c0d1;
   border-radius: 2px;
-  position: relative;
+  position: fixed;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fcfcfc;
 
   label {
     position: absolute;
@@ -241,15 +262,24 @@ popup-order-block {
     background-color: orange;
     top: -24px;
     right: -18px;
+    background-image: url("../img/icon-close-white.svg");
+    background-size: 13px 13px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    cursor: pointer;
   }
   // background-color: #d8dce6;
 }
 
 order-block-content {
   display: block;
+  flex-shrink: 10;
   padding-left: 50px;
   padding-right: 20px;
   padding-top: 56px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: calc(100% - 90px);
   // background-color: #e3e4e7;
 
   & > h2 {
@@ -335,7 +365,7 @@ td {
     & > p {
       z-index: 1;
       padding-right: 18px;
-      background-color: white;
+      background-color: #fcfcfc;
       font-weight: 300;
       line-height: 1.5;
       font-size: 14px;
@@ -430,4 +460,17 @@ td {
     margin-left: 0;
     margin-right: 30px;
   }
+}
+
+#popup-order-checkbox {
+  display: none;
+}
+
+#popup-order-checkbox:not(:checked) + popup-order-block {
+  display: none;
+}
+
+total-cost-block .solution-button {
+  display: inline-block;
+  text-align: center;
 }

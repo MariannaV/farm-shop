@@ -18,6 +18,7 @@ slider-items-description {
 
   @media ($min-desktop) {
     width: 23%;
+    min-width: 23%;
     padding-top: 28px;
   }
 
@@ -38,7 +39,17 @@ slider-items-description {
     min-width: 280px;
 
     @media ($min-desktop) {
-      margin-right: 17px;
+      margin-right: 14px;
+    }
+  }
+}
+
+.slider-items-container .owl-stage .owl-item:not(.active) + .active,
+.slider-items-container .owl-stage .active:first-of-type {
+  .slide-item-additional-information-text {
+    @media ($min-tablet) {
+      left: calc(100% - 16px);
+      right: initial;
     }
   }
 }
@@ -331,6 +342,14 @@ slider-items-description + .slider-items-container {
   opacity: 1;
   transition: opacity 0.3s ease;
   overflow: hidden;
+  z-index: 1;
+
+  @media ($max-tablet) {
+    right: 10px;
+    top: 30px;
+    width: 212px;
+    word-break: break-all;
+  }
 
   &::before {
     content: '';

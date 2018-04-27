@@ -60,14 +60,16 @@ body.main-page
 	total-cost-block
 		h6.total-cost Стоимость решения под ваш бизнес:
 		total-solution-price 27 790
-		a.solution-link(href="#") Показать выписку
-		button.solution-button Заказать комплект
-	#popup-demo
-		h6 Всплывающие окна:
-		label(for="popup-callback-checkbox").solution-button Заказать звонок
+		label.solution-link(for="popup-order-checkbox") Показать выписку
+		label.solution-button(for="popup-callback-checkbox") Заказать комплект
+	//- #popup-demo
+	//- 	h6 Всплывающие окна:
+	//- 	label.solution-button(for="popup-callback-checkbox") Заказать звонок
+	//- 	label(for="popup-order-checkbox").solution-button Показать выписку
 	+popup-callback()
+	input(type="checkbox" id="popup-order-checkbox")
 	popup-order-block
-		label
+		label(for="popup-order-checkbox")
 		order-block-content
 			h2 Онлайн-касса
 			table

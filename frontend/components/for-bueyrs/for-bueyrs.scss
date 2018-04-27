@@ -72,7 +72,8 @@
   }
 }
 
-.for-buyers-section-title + .for-buyers-items {
+.for-buyers-section-title + .for-buyers-items,
+.for-buyers-section-title + .section-with-service-articles {
   margin-top: 44px;
 
   @media ($min-desktop) {
@@ -345,7 +346,7 @@
     &::after {
       content: '';
       display: block;
-      width: 16px;
+      width: 12px;
       height: 2px;
       background-color: #d8dce6;
       position: absolute;
@@ -353,6 +354,10 @@
       top: 50%;
       transform: translateX(-50%);
       transition: background-color 0.5s ease;
+
+      @media ($min-desktop) {
+        width: 16px;
+      }
     }
 
     &:hover {
@@ -376,7 +381,11 @@
 
   &-plus::after {
     transform: rotate(90deg);
-    left: 11px;
+    left: 5px;
+
+    @media ($min-desktop) {
+      left: 11px;
+    }
   }
 
   &-value {
@@ -443,6 +452,10 @@
   transition: filter 0.3s ease;
   filter: opacity(1);
   cursor: pointer;
+
+  @media ($max-desktop) {
+    display: none;
+  }
 }
 
 .items-block-service {
@@ -452,7 +465,7 @@
   min-height: 390px;
   border: 1px solid #dce0e9;
   border-radius: 5px;
-  margin-top: 70px;
+  // margin-top: 70px;
   padding: 45px 20px 49px 20px;
 }
 
@@ -540,9 +553,11 @@ service-price {
 }
 
 .section-with-service-articles {
-  display: flex;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, 274px);
 
-  article + article {
-    margin-left: 20px;
+  @media ($min-desktop) {
+    grid-gap: 16px;
   }
 }

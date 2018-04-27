@@ -39,9 +39,13 @@
 			<h6 class="solution-title">Готовое решение:</h6>
 			<banner-solution-price>27 790 </banner-solution-price>
 			<p class="solution-description">В комплекте: касса (1), оборудование (2), приложения (1)</p>
-			<a class="solution-link" href="#">Показать выписку</a>
-			<button class="solution-button">Заказать комплект</button>
+			<label class="solution-link" for="popup-order-checkbox">Показать выписку</label>
+			<label class="solution-button" for="popup-callback-checkbox">Заказать комплект</label>
 		</banner-solution>
+		<picture class="banner-img">
+			<source srcset="./img/farm-shop.png" media="(max-width: 767px)" />
+			<img src="./img/banner-1-1600.jpg" alt="" />
+		</picture>
 	</banner-block>
 	<slider-items class="cashbox-slider">
 		<slider-items-description>
@@ -50,6 +54,12 @@
 		</slider-items-description>
 		<div class="slider-items-container">
 			<div class="slide-item">
+				<div class="slide-item-additional-information">
+					<div class="slide-item-additional-information-icon">?</div>
+					<div class="slide-item-additional-information-text">
+						<p>Подойдёт для маленьких аптек, которые не относятся к сетям и не автоматизировали учёт.</p>
+					</div>
+				</div>
 				<input class="slide-item-checkbox" type="checkbox" id="evotor1" />
 				<div class="slide-item-block">
 					<img class="slide-item-img" src="./img/evotor-7.2.png" alt="" />
@@ -90,6 +100,12 @@
 				</div>
 			</div>
 			<div class="slide-item">
+				<div class="slide-item-additional-information">
+					<div class="slide-item-additional-information-icon">?</div>
+					<div class="slide-item-additional-information-text">
+						<p>Подойдёт для маленьких аптек, которые не относятся к сетям и не автоматизировали учёт.</p>
+					</div>
+				</div>
 				<input class="slide-item-checkbox" type="checkbox" id="evotor3" />
 				<div class="slide-item-block">
 					<img class="slide-item-img" src="./img/evotor-10.png" alt="" />
@@ -103,6 +119,52 @@
 						<p class="slide-item-description">Возьмёт на себя кухню вашего бизнеса</p>
 						<div class="slide-item-price only-price">28 990</div>
 						<label class="slide-item-label" for="evotor3"></label>
+					</div>
+				</div>
+			</div>
+			<div class="slide-item">
+				<div class="slide-item-additional-information">
+					<div class="slide-item-additional-information-icon">?</div>
+					<div class="slide-item-additional-information-text">
+						<p>Подойдёт для маленьких аптек, которые не относятся к сетям и не автоматизировали учёт.</p>
+					</div>
+				</div>
+				<input class="slide-item-checkbox" type="checkbox" id="evotor1" />
+				<div class="slide-item-block">
+					<img class="slide-item-img" src="./img/evotor-7.2.png" alt="" />
+					<div class="slide-item-text">
+						<div class="slide-item-buttons">
+							<button class="slide-item-minus">-</button>
+							<div class="slide-item-amount">1</div>
+							<button class="slide-item-plus">+ </button>
+						</div>
+						<h2 class="slide-item-title">Эвотор 7.2</h2>
+						<p class="slide-item-description">Проверенная, функциональная, доступная</p>
+						<div class="slide-item-price only-price">18 490</div>
+						<label class="slide-item-label" for="evotor1"></label>
+					</div>
+				</div>
+			</div>
+			<div class="slide-item">
+				<div class="slide-item-additional-information">
+					<div class="slide-item-additional-information-icon">?</div>
+					<div class="slide-item-additional-information-text">
+						<p>Подойдёт для маленьких аптек, которые не относятся к сетям и не автоматизировали учёт.</p>
+					</div>
+				</div>
+				<input class="slide-item-checkbox" type="checkbox" id="evotor2" />
+				<div class="slide-item-block">
+					<img class="slide-item-img" src="./img/evotor-7.3.png" alt="" />
+					<div class="slide-item-text">
+						<div class="slide-item-buttons">
+							<button class="slide-item-minus">-</button>
+							<div class="slide-item-amount">1</div>
+							<button class="slide-item-plus">+ </button>
+						</div>
+						<h2 class="slide-item-title">Эвотор 7.3</h2>
+						<p class="slide-item-description">Продаёт, автоматизирует, без проводов</p>
+						<div class="slide-item-price only-price">23 490</div>
+						<label class="slide-item-label" for="evotor2"></label>
 					</div>
 				</div>
 			</div>
@@ -340,56 +402,51 @@
 		</section>
 		<section class="for-buyers-section">
 			<h3 class="for-buyers-section-title">
-				<span number='3' all='3'>/</span> Выберите услугу
-				<div class="section-with-service-articles">
-					<article class="items-block-service active">
-						<img class="items-block-service-img" src="./img/ofd.svg" alt="" />
-						<div class="article-description">
-							<p class="service-title">Подключение к ОФД</p>
-							<service-price class="only-price">3000</service-price>
-							<button class="select-service"> Выбрано</button>
-						</div>
-					</article>
-					<article class="items-block-service">
-						<img class="items-block-service-img" src="./img/ofd.svg" alt="" />
-						<div class="article-description">
-							<p class="service-title">Настройка, обучение</p>
-							<service-price class="only-price">2500</service-price>
-							<button class="select-service"> Выбрать услугу</button>
-						</div>
-					</article>
-					<article class="items-block-service">
-						<img class="items-block-service-img" src="./img/ofd.svg" alt="" />
-						<div class="article-description">
-							<p class="service-title">Услуги по регистрации</p>
-							<service-price class="only-price">1500</service-price>
-							<button class="select-service"> Выбрать услугу</button>
-						</div>
-					</article>
-					<article class="items-block-service">
-						<img class="items-block-service-img" src="./img/ofd.svg" alt="" />
-						<div class="article-description">
-							<p class="service-title">Техподдержка HelpMe</p>
-							<service-price class="only-price">550</service-price>
-							<button class="select-service"> Выбрать услугу</button>
-						</div>
-					</article>
-				</div>
-			</h3>
+				<span number='3' all='3'>/</span> Выберите услугу</h3>
+			<div class="section-with-service-articles">
+				<article class="items-block-service active">
+					<img class="items-block-service-img" src="./img/ofd.svg" alt="" />
+					<div class="article-description">
+						<p class="service-title">Подключение к ОФД</p>
+						<service-price class="only-price">3000</service-price>
+						<button class="select-service"> Выбрано</button>
+					</div>
+				</article>
+				<article class="items-block-service">
+					<img class="items-block-service-img" src="./img/ofd.svg" alt="" />
+					<div class="article-description">
+						<p class="service-title">Настройка, обучение</p>
+						<service-price class="only-price">2500</service-price>
+						<button class="select-service"> Выбрать услугу</button>
+					</div>
+				</article>
+				<article class="items-block-service">
+					<img class="items-block-service-img" src="./img/ofd.svg" alt="" />
+					<div class="article-description">
+						<p class="service-title">Услуги по регистрации</p>
+						<service-price class="only-price">1500</service-price>
+						<button class="select-service"> Выбрать услугу</button>
+					</div>
+				</article>
+				<article class="items-block-service">
+					<img class="items-block-service-img" src="./img/ofd.svg" alt="" />
+					<div class="article-description">
+						<p class="service-title">Техподдержка HelpMe</p>
+						<service-price class="only-price">550</service-price>
+						<button class="select-service"> Выбрать услугу</button>
+					</div>
+				</article>
+			</div>
 		</section>
 	</div>
 	<total-cost-block>
 		<h6 class="total-cost">Стоимость решения под ваш бизнес:</h6>
 		<total-solution-price>27 790</total-solution-price>
-		<a class="solution-link" href="#">Показать выписку</a>
-		<button class="solution-button">Заказать комплект</button>
+		<label class="solution-link" for="popup-order-checkbox">Показать выписку</label>
+		<label class="solution-button" for="popup-callback-checkbox">Заказать комплект</label>
 	</total-cost-block>
-	<div id="popup-demo">
-		<h6>Всплывающие окна:</h6>
-		<label class="solution-button" for="popup-callback-checkbox">Заказать звонок</label>
-	</div>
 	<input type="checkbox" id="popup-callback-checkbox" />
-	<div class="request-sent" id="popup-callback">
+	<div id="popup-callback">
 		<label for="popup-callback-checkbox"></label>
 		<popup-callback-block>
 			<h3>На какой номер вам позвонить? </h3>
@@ -414,8 +471,9 @@
 			</p>
 		</popup-message>
 	</div>
+	<input type="checkbox" id="popup-order-checkbox">
 	<popup-order-block>
-		<label></label>
+		<label for="popup-order-checkbox"></label>
 		<order-block-content>
 			<h2>Онлайн-касса</h2>
 			<table>

@@ -10,5 +10,8 @@ mixin banner-block
       h6.solution-title Готовое решение:
       banner-solution-price 27 790      
       p.solution-description В комплекте: касса (1), оборудование (2), приложения (1)
-      a.solution-link(href="#") Показать выписку
-      button.solution-button Заказать комплект
+      label.solution-link(for="popup-order-checkbox") Показать выписку
+      label(for="popup-callback-checkbox").solution-button Заказать комплект
+    picture.banner-img 
+      source(srcset="../img/farm-shop.png" media="(max-width: 767px)")
+      img(src="../img/banner-1-1600.jpg" alt="")

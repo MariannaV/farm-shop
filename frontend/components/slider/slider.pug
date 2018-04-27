@@ -5,6 +5,9 @@ mixin slider()
       a      
     .slider-items-container      
       .slide-item
+        .slide-item-additional-information
+          .slide-item-additional-information-icon ?
+          .slide-item-additional-information-text: p Подойдёт для маленьких аптек, которые не относятся к сетям и не автоматизировали учёт.
         input.slide-item-checkbox(type="checkbox" id="evotor1")
         .slide-item-block
           img.slide-item-img(src="../img/evotor-7.2.png", alt="")
@@ -34,6 +37,9 @@ mixin slider()
             div.slide-item-price.only-price 23 490
             label.slide-item-label(for="evotor2")
       .slide-item
+        .slide-item-additional-information
+          .slide-item-additional-information-icon ?
+          .slide-item-additional-information-text: p Подойдёт для маленьких аптек, которые не относятся к сетям и не автоматизировали учёт.
         input.slide-item-checkbox(type="checkbox" id="evotor3")
         .slide-item-block
           img.slide-item-img(src="../img/evotor-10.png", alt="")
@@ -46,3 +52,35 @@ mixin slider()
             p.slide-item-description Возьмёт на себя кухню вашего бизнеса
             div.slide-item-price.only-price 28 990
             label.slide-item-label(for="evotor3")
+      .slide-item
+        .slide-item-additional-information
+          .slide-item-additional-information-icon ?
+          .slide-item-additional-information-text: p Подойдёт для маленьких аптек, которые не относятся к сетям и не автоматизировали учёт.
+        input.slide-item-checkbox(type="checkbox" id="evotor1")
+        .slide-item-block
+          img.slide-item-img(src="../img/evotor-7.2.png", alt="")
+          .slide-item-text
+            .slide-item-buttons
+              button.slide-item-minus -
+              .slide-item-amount 1
+              button.slide-item-plus +          
+            h2.slide-item-title Эвотор 7.2
+            p.slide-item-description Проверенная, функциональная, доступная
+            div.slide-item-price.only-price 18 490
+            label.slide-item-label(for="evotor1")
+      .slide-item
+        .slide-item-additional-information
+          .slide-item-additional-information-icon ?
+          .slide-item-additional-information-text: p Подойдёт для маленьких аптек, которые не относятся к сетям и не автоматизировали учёт.
+        input.slide-item-checkbox(type="checkbox" id="evotor2")
+        .slide-item-block
+          img.slide-item-img(src="../img/evotor-7.3.png", alt="")
+          .slide-item-text
+            .slide-item-buttons
+              button.slide-item-minus -
+              .slide-item-amount 1
+              button.slide-item-plus +          
+            h2.slide-item-title Эвотор 7.3
+            p.slide-item-description Продаёт, автоматизирует, без проводов
+            div.slide-item-price.only-price 23 490
+            label.slide-item-label(for="evotor2")
