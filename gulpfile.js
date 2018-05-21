@@ -132,7 +132,8 @@ gulp.task('reload', function (done) {
 gulp.task('default', gulp.series(gulp.parallel(gulp.series('img', 'css'), gulp.series('scripts', 'js-es'), gulp.series('html', function () {
   browserSync.init({
     server: {
-      baseDir: "./public/"
+      baseDir: "./public/",
+      open: false
     }
   })
   gulp.watch('frontend/img/**/*.*', gulp.series('img', 'reload'));

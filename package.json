@@ -28,7 +28,11 @@
     "postcss-font-magician": "^2.0.0",
     "postcss-scss": "^1.0.2",
     "postcss-sprites": "^4.2.1",
-    "precss": "^2.0.0"
+    "precss": "^2.0.0",
+    "pug-lint": "^2.5.0"
   },
-  "repository": "https://maxim-buslaev@bitbucket.org/maxim-buslaev/gulp-project.git"
+  "repository": "https://maxim-buslaev@bitbucket.org/maxim-buslaev/gulp-project.git",
+  "dependencies": {
+    "npm": "^6.0.1"
+  }
 }

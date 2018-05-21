@@ -1,0 +1,15 @@
+mixin for-buyer-item({title, description, img, amount, price, id})
+  article.for-buyer-item
+    input(type="checkbox" id=id).for-buyer-item-checkbox
+    label(for=id).for-buyer-item-label
+    .for-buyer-item-img
+      img(src=`../img/${img}`, alt="")
+    .for-buyer-item-title
+      h6 #{title}
+      p #{description}
+    .for-buyer-item-amount
+      button.for-buyer-item-amount-minus
+      .for-buyer-item-amount-value #{amount}
+      button.for-buyer-item-amount-plus
+    .for-buyer-item-price #{price} <span />
+    .for-buyer-item-close

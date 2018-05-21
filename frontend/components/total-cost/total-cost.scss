@@ -1,0 +1,44 @@
+total-cost-block {
+  display: block;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 68px;
+
+  @media ($min-desktop) {
+    margin-top: 135px;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: #e5e8ef;
+      margin-bottom: 53px;
+    }
+  }
+
+  h6 {
+    line-height: 51px;
+    font-size: 36px;
+    color: #ff7800;
+  }
+}
+
+total-solution-price {
+  // display: inline-block;
+  display: block;
+  line-height: 79px;
+  font-size: 56px;
+  color: #333333;
+
+  &::after {
+    content: "";
+    background-image: url("../img/rub.svg");
+    min-width: 13px;
+    min-height: 18px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+  }
+}

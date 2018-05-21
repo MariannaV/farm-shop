@@ -2,7 +2,10 @@ include ../components/head/head
 include ../components/banner/banner
 include ../components/slider/slider
 include ../components/for-bueyrs/for-bueyrs
+include ../components/for-bueyrs/for-buyer-item
 include ../components/popup/callback
+include ../components/popup/popup-order
+include ../components/total-cost/total-cost
 
 doctype html
 html(lang="ru")
@@ -57,62 +60,14 @@ body.main-page
 					div 700
 					span / месяц
 	
-	total-cost-block
-		h6.total-cost Стоимость решения под ваш бизнес:
-		total-solution-price 27 790
-		label.solution-link(for="popup-order-checkbox") Показать выписку
-		label.solution-button(for="popup-callback-checkbox") Заказать комплект
+	+total-cost()
 	//- #popup-demo
 	//- 	h6 Всплывающие окна:
 	//- 	label.solution-button(for="popup-callback-checkbox") Заказать звонок
 	//- 	label(for="popup-order-checkbox").solution-button Показать выписку
 	+popup-callback()
-	input(type="checkbox" id="popup-order-checkbox")
-	popup-order-block
-		label(for="popup-order-checkbox")
-		order-block-content
-			h2 Онлайн-касса
-			table
-				tr
-					td.name: p Эвотор 7.3
-					td.amount 1 <span>шт</span>
-					td.multiply
-					td.price 23 490 <span />
-			h2 Оборудование
-			table
-				tr
-					td.name: p Сканер штрихкодов
-					td.amount 1 <span>шт</span>
-					td.multiply
-					td.price 5750 <span />
-				tr
-					td.name: p УТМ-модуль для ЕГАИС
-					td.amount 2 <span>шт</span>
-					td.multiply х
-					td.price 13 000 <span />
-				tr
-					td.name: p Дисплей покупателя
-					td.amount 1 <span>шт</span>
-					td.multiply 
-					td.price 4 800 <span />
-			h2 Приложения
-			table
-				tr
-					td.name: p Драйвер для дисплея покупателя
-					td.amount 1 <span>шт</span>
-					td.multiply
-					td.price 1000 <span />
-				tr
-					td.name: p Встроенная система  Эвотор
-					td.amount 1 <span>шт</span>
-					td.multiply 
-					td.price 0 <span />
-			h2 Услуги
-
-		order-block-conclusion 
-			p Итого:
-			conclusion-cost 61 040
-			button.conclusion-button Заказать сейчас
+	+popup-order()
+	
 
 
 
