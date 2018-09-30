@@ -843,7 +843,25 @@ slider-items-description > h6 {
   display: flex;
   padding: 20px 20px 17px;
   position: relative;
+  background-color: #ffffff;
 }
+
+article.for-buyer-item::before {
+    content: "";
+    display: block;
+    width: 90%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-box-shadow: 0px 10px 30px 0px #D7DAE0;
+    box-shadow: 0px 0px 30px 0px #D7DAE0;
+    z-index: -1;
+}
+
 
 .for-buyer-item + .for-buyer-item:not(.no-margin-top) {
   margin-top: 42px;
