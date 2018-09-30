@@ -2166,3 +2166,12 @@ total-cost-block .solution-button {
     text-align: left;
   }
 }
+
+
+
+.items-block-service.active .select-service::after {
+    content: "Выбрано";
+}
+.items-block-service .select-service::after {
+    content: "Выбрать услугу";
+}
